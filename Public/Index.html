@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="card-bg card-bg-1"></div>
+        <div class="card-bg card-bg-2"></div>
+
+        <img class="logo logo-1" src="logo.png" alt="Logo 1">
+        <img class="logo logo-2" src="logo.png" alt="Logo 2">
+
+        <!-- Sign In -->
+        <div class="form signin active">
+            <form id="signinForm">
+
+                <h2>Sign In</h2>
+
+                <input
+                    id="signinEmail"
+                    type="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    id="signinPassword"
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit">SIGN IN</button>
+
+                <p id="signinMessage"></p>
+
+                <a href="#" onclick="toggleView(); return false;">
+                    Don't have an account?
+                    <em>Register</em>
+                </a>
+
+            </form>
+        </div>
+
+        <!-- Sign Up -->
+        <div class="form signup">
+
+            <form id="signupForm">
+
+                <h2>Register</h2>
+
+                <input
+                    id="signupName"
+                    type="text"
+                    placeholder="Name"
+                    required
+                >
+
+                <input
+                    id="signupEmail"
+                    type="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    id="signupPassword"
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit">SIGN UP</button>
+
+                <p id="signupMessage"></p>
+
+                <a href="#" onclick="toggleView(); return false;">
+                    Already have an account?
+                    <em>Sign in</em>
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
